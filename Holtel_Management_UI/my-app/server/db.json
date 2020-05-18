@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "username": "sj",
+      "password": "123",
+      "type": "0",
+      "id": 1
+    },
+    {
+      "username": "sj",
+      "password": "123",
+      "type": "1",
+      "id": 2
+    }
+  ],
+  "bookings": [
+    {
+      "guestName": "wfrgegh",
+      "guestId": "opikky",
+      "suiteType": "Deluxe",
+      "checkIn": "2020-05-13T18:30:00.000Z",
+      "checkOut": "2020-05-09T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "guestName": "jk",
+      "guestId": "87",
+      "suiteType": "Deluxe",
+      "checkIn": "2020-05-12T18:30:00.000Z",
+      "checkOut": "2020-05-24T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "guestName": "uk",
+      "guestId": "87",
+      "suiteType": "Deluxe",
+      "checkIn": "2020-05-12T18:30:00.000Z",
+      "checkOut": "2020-05-24T18:30:00.000Z",
+      "id": 3
+    }
+  ]
+}

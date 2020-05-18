@@ -1,0 +1,33 @@
+<form [formGroup]="bookingForm" (ngSubmit)="onSubmit(buttonType)">
+ 
+  <div>
+    <label for="username">Guest Name</label>
+    <input type="text" id="guestName" formControlName="guestName"  placeholder="guestName"/>
+  </div>
+  <div>
+    <label for="username">Guest ID</label>
+    <input type="text" id="guestID" formControlName="guestID"  placeholder="guestID"/>
+  </div>
+  
+  <div>
+    <input type="radio" formControlName="suiteType" id="userCategory2" value="Deluxe"/> Deluxe
+    <input type="radio" formControlName="suiteType" id="userCategory1" value="Super Deluxe"/> Super Deluxe
+    <input type="radio" formControlName="suiteType" id="userCategory1" value="Family"/> Family
+    
+  </div>
+
+ <!--  Call method diplay to show existing booking-->
+
+  <div>
+    <label for="institution">CheckIn </label>
+    <ejs-datepicker formControlName="datepicker" id='datepicker' placeholder='Select a date' [value]='dateValue'  format ='yyyy-MM-dd'></ejs-datepicker>
+  </div>
+  <div>
+    <label for="institution">CheckOut </label>
+    <ejs-datepicker formControlName="datepicker2" id='datepicker2' placeholder='Select a date' [value]='dateValue'  format ='yyyy-MM-dd'></ejs-datepicker>
+  </div>
+  
+  <button type="button" (click)="onSubmit('Submit')" >Submit</button>
+  <button type="button" (click)="onSubmit('View')">View Bookings</button>
+</form>
+

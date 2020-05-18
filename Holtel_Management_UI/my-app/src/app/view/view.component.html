@@ -1,0 +1,12 @@
+<h3>Your Current Reservations </h3>
+<table id="customers">
+    <tr>
+        <th>Guest Name</th>
+        <th>Guest Suite No.</th>
+        <th>Cancel Booking</th>
+    </tr>
+    <tr *ngFor="let book of reservationList">
+        <th>{{book.guestName}}</th>
+        <th>{{book.suiteNo}}</th>
+        <th><button type='button' (click)="onCancel(book.suiteNo)">Cancel Booking</button></th>        
+    </tr>
